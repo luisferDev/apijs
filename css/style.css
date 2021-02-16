@@ -1,0 +1,726 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Ubuntu:wght@300;400;700&display=swap');
+
+/* ----------------------------------------------------
+ MAIN
+-------------------------------------------------------*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+}
+
+html {
+    height: 100%;
+    color: black;
+    font-weight: 400;
+    font-size: 105.8823529412%;
+    line-height: calc(27/ 18);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Questrial', sans-serif;
+    color: #262b2b;
+    font-size: 0.8333333333rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.0277777778rem;
+    padding: 0;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media (min-width : 768px) {
+    body {
+        font-size: 1.1111111111rem;
+    }
+}
+
+p>strong {
+    padding-right: 7px !important;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+table>tbody {
+    background-color: #f9f9f9;
+}
+
+th {
+    background-color: #b05151;
+    color: white;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #999;
+    vertical-align: middle
+}
+
+
+[role="main"] {
+    position: relative;
+    z-index: 1;
+    flex-grow: 1;
+    overflow: visible;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+    background: url(../imagenes/api/bg-api.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    margin: 0 0 0.5555555556rem;
+    font-weight: 100;
+    line-height: 1.2;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: none;
+    margin-bottom: 2rem;
+}
+
+h1,
+.h1 {
+    font-size: 2.4rem;
+    /*margin-top: 2rem;*/
+}
+
+@media (min-width : 1024px) {
+
+    h1,
+    .h1 {
+        font-size: 3.3333333333rem;
+        margin-top: 2rem;
+    }
+}
+
+h2,
+.h2 {
+    font-size: 1.7777777778rem;
+}
+
+@media (min-width : 1024px) {
+
+    h2,
+    .h2 {
+        font-size: 2.7777777778rem;
+    }
+}
+
+h3,
+.h3 {
+    font-size: 1.5555555556rem;
+}
+
+@media (min-width : 1024px) {
+
+    h3,
+    .h3 {
+        font-size: 2.2222222222rem;
+    }
+}
+
+h4,
+.h4 {
+    font-size: 1.1111111111rem;
+}
+
+@media (min-width : 1024px) {
+
+    h4,
+    .h4 {
+        font-size: 1.3333333333rem;
+    }
+}
+
+h5,
+.h5 {
+    font-size: 1rem;
+}
+
+@media (min-width : 1024px) {
+
+    h5,
+    .h5 {
+        font-size: 1.1111111111rem;
+    }
+}
+
+ol,
+ul {
+    padding: 0;
+}
+
+a {
+    /*color: blue;*/
+    font-weight: 400;
+    transition: all 0.2s linear;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #b05151;
+    cursor: pointer;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+em {
+    font-style: italic;
+}
+
+small {
+    font-size: 0.9444444444rem;
+}
+
+nav li a {
+    color: white;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    font-size: 15px;
+}
+
+nav li a:hover,
+nav li a:focus,
+nav li a:active {
+    text-decoration: none;
+}
+
+.inner-box {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+}
+@media (min-width: 576px) {
+    .inner-box {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .inner-box {
+        max-width: 720px;
+    }
+}
+@media (min-width: 1040px) {
+    .inner-box {
+        max-width: 1140px;
+    }
+}
+
+
+/* ----------------------------------------------------
+    Hero
+-------------------------------------------------------*/
+
+
+.api-search .hero h1,
+.api-search .hero .h1,
+.api-search .hero h2,
+.api-search .hero .h2 {
+    margin: 0 0 0.5555555556rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: none;
+    margin-bottom: 2rem;
+}
+
+.api-search {
+    min-height: 100vh;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-left: 0;
+}
+
+
+.api-search >[class*="col-"],
+.api-results [class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.api-search>.row,
+.api-results>.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.api-search .hero>.row {
+    height: 100vh;
+}
+
+@media (min-width: 768px) {
+    .api-search .hero>.row {
+        height: 600px;
+    }
+}
+
+
+.api-search .col-f {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    padding-left: 5%;
+    z-index: 1;
+}
+
+.api-search .hero {
+    color: #222;
+    background-color: #000;
+    background-image: url(../imagenes/api/bg-broker.png);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: 0 0;
+    animation: slide 90s infinite linear;
+    height: 650px;
+    margin-top: 0;
+}
+
+@media (min-width: 768px) {
+    .api-search .hero {
+        margin-top: calc(100vh - 95vh);
+    }
+}
+
+@media (min-width: 1040px) {
+    .api-search .hero {
+        height: 600px;
+        margin-top: calc(100vh - 87vh);
+    }
+}
+
+@media (min-width: 1400px) {
+    .api-search .hero {
+        height: 600px;
+        margin-top: calc(100vh - 85vh);
+    }
+}
+
+@media (min-width: 1600px) {
+    .api-search .hero {
+        height: 600px;
+        margin-top: calc(100vh - 80vh);
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    .api-search .hero {
+        height: auto;
+        margin-top: calc(100vh - 85vh);
+        margin-bottom: calc(100vh - 85vh);
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
+    .api-search .hero {
+        height: auto;
+        margin-bottom: calc(100vh - 85vh);
+    }
+}
+
+
+.api-search .hero img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+@keyframes slide {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -100vh 0;
+    }
+}
+
+.api-search .api-title {
+    color: white;
+}
+
+.api-search .api-title span {
+    display: block;
+}
+
+.api-search .api-title .h1,
+.api-search .api-title .h2 {
+    margin-bottom: 0;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.api-search .api-title .h1 {
+    font-size: 60px;
+}
+
+.api-search .api-title .h3 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+    .api-search .api-title .h1,
+    .api-search .api-title .h2,
+    .api-search .api-title .h3 {
+        font-size: 4vw;
+    }
+}
+
+.api-search .caja {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 3px solid black;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, .8);
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 1024px) {
+    .api-search .caja {
+        padding: 1.6rem 2rem;
+    }
+}
+
+.api-search .img-still {
+    position: absolute;
+}
+
+.api-search .message {
+    font-size: 0.9rem;
+    margin-top: 0;
+}
+
+@media (min-width: 768px) {
+    .api-search .message {
+        font-size: 1.1rem;
+    }
+}
+
+.api-search .message span {
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: block;
+    margin: 5px 0;
+}
+
+@media (min-width: 768px) {
+    .api-search .message span {
+        font-size: 0.9rem;
+    }
+}
+
+.api-search .btn,
+footer .btn {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    background: white;
+    padding: 0.3rem 3.4rem;
+    border: 3px solid black;
+    margin-right: 2.6rem;
+    box-shadow: 0 0 0 black;
+    transition: all 0.2s;
+}
+
+button#boton {
+    margin-top: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+    button#boton {
+        margin-top: 0;
+    }
+}
+
+
+.api-search .btn:last-child,
+footer .btn:last-child {
+    margin: 0;
+}
+
+.api-search .btn:hover,
+footer .btn:hover {
+    box-shadow: 0.4rem 0.4rem 0 black;
+    transform: translate(-0.4rem, -0.4rem);
+}
+
+.api-search .btn:active,
+footer .btn:active {
+    box-shadow: 0 0 0 black;
+    transform: translate(0, 0);
+}
+
+.api-search .options input {
+    padding: 6px;
+}
+.st-answer {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 40px 0;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 30px;
+    padding: 1%
+}
+
+@media (max-width: 767px) {
+
+    output.st-answer,
+    output.st-gallery {
+        font-size: 35px;
+        padding: 4%;
+    }
+}
+
+output#salida {
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 4rem;
+}
+
+@media (min-width: 1024px) {
+    output#salida {
+        padding-bottom: 8rem;    
+    }
+}
+
+.image-api {
+    max-width: 50%;
+    object-fit: cover;
+    height: auto;
+    margin: 0%;
+    border: 5px solid white;
+}
+
+@media (min-width: 768px) {
+    .image-api {
+        max-width: 33.33%;
+    }
+}
+
+/* ---------------------------------------------------
+    FOOTER
+--------------------------------------------------- */
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #eee;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3.3333333333rem;
+    text-align: center;
+}
+
+footer .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media (min-width: 768px) {
+    footer {
+        padding-top: 4.4444444444rem;
+        padding-bottom: 2.2222222222rem;
+    }
+}
+
+footer h2 {
+    margin-bottom: 2.2222222222rem;
+}
+
+footer .contact-content {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    footer .contact-content {
+        width: 33.3333333333rem;
+    }
+}
+footer .contact-content a.btn {
+    margin-top: 1.1rem;
+}
+
+footer .contact-legal {
+    padding-top: 1.6666666667rem;
+}
+
+footer .contact-legal p {
+    font-size: 0.7777777778rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
